@@ -1,0 +1,45 @@
+{
+  "ticket_id": "TKT-119877",
+  "account_id": "ACC-2431",
+  "category": "how_to",
+  "priority": "P4",
+  "route_to": "L1_support",
+  "escalate": false,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-1204",
+    "KB-1589"
+  ],
+  "account_signals": [],
+  "customer_reply": "Please check the approval workflow levels in the eProcurement module.",
+  "internal_note": "Customer inquiry about slow approval times in eProcurement. Refer to KB-1204 and KB-1589 for troubleshooting steps.",
+  "confidence": 0.8,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "eProcurement slow approval times",
+        "module": "eProcurement",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-2867: E-1115: Approval workflow times out', 'KB-1204: How to: Change a PO after approval', 'KB-1589: FAQ: How long is approval workflow history retained?', 'KB-5563: Configuration reference: Approval workflow numbering', 'KB-5638: How to: Configure approval workflow levels']"
+    },
+    {
+      "step": 3,
+      "action": "search_related_tickets",
+      "input": {
+        "account_id": "ACC-2431",
+        "module": "eProcurement",
+        "error_code": "",
+        "subject": "Quick question - approvals seem a bit slow",
+        "description": "Not urgent. Some of our approvers say purchase orders take longer to show up in their inbox than before. Is there a setting we can check?",
+        "days": 30
+      },
+      "observation": "Found 3 related tickets. Top matches: ['TKT-159183', 'TKT-119877', 'TKT-108771']"
+    }
+  ]
+}

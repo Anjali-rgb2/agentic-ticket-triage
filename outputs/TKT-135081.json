@@ -1,0 +1,59 @@
+{
+  "ticket_id": "TKT-135081",
+  "account_id": "ACC-7533",
+  "category": "needs_info",
+  "priority": "P3",
+  "route_to": "L2_engineering",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": true,
+  "kb_references": [
+    "KB-4795",
+    "KB-1520",
+    "KB-1742",
+    "KB-1764",
+    "KB-2364",
+    "KB-2407",
+    "KB-2869"
+  ],
+  "account_signals": [],
+  "customer_reply": "Please provide more information about the display issue.",
+  "internal_note": "Further investigation needed to determine the cause of the issue.",
+  "confidence": 0.0,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "odd thing in auction",
+        "module": "Sourcing",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-1690: E-3115: Reverse auction fails to save', 'KB-1764: FAQ: How long is reverse auction history retained?', 'KB-2492: E-3185: Reverse auction returns a validation error', 'KB-5055: Configuration reference: Reverse auction notification', 'KB-6132: Configuration reference: Reverse auction currency']"
+    },
+    {
+      "step": 2,
+      "action": "search_kb",
+      "input": {
+        "query": "display thing",
+        "module": "Sourcing",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-1520: Configuration reference: Bid submission attachment limit', 'KB-1742: FAQ: Who receives notifications for a supplier invitation?', 'KB-1764: FAQ: How long is reverse auction history retained?', 'KB-2364: Configuration reference: Rfx event routing', 'KB-2407: How to: Create an RFx event']"
+    },
+    {
+      "step": 3,
+      "action": "search_kb",
+      "input": {
+        "query": "bid amounts visible to competing supplier",
+        "module": "Sourcing",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-4795: E-3310: Bid submission is rejected', 'KB-1461: Configuration reference: Bid submission timeout', 'KB-1520: Configuration reference: Bid submission attachment limit', 'KB-1742: FAQ: Who receives notifications for a supplier invitation?', 'KB-1785: E-3398: Bid submission creates duplicate records']"
+    }
+  ]
+}

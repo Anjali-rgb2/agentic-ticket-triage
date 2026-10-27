@@ -1,0 +1,32 @@
+{
+  "ticket_id": "TKT-192732",
+  "account_id": "ACC-6031",
+  "category": "duplicate",
+  "priority": "P2",
+  "route_to": "L1_support",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-2982",
+    "KB-2914"
+  ],
+  "account_signals": [],
+  "customer_reply": "Re: Spend dashboard still not refreshing. Please try the steps outlined in KB-2982.",
+  "internal_note": "Duplicate of TKT-192732 found. Refer to KB-2914 for priority and escalation policy.",
+  "confidence": 0.8,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "Re: Spend dashboard still not refreshing E-6105",
+        "module": "analytics",
+        "error_code": "E-6105",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-2982: E-6105: Dashboard does not refresh', 'KB-9467: E-6167: Spend cube refresh does not trigger', 'KB-2817: Configuration reference: Dashboard mapping', 'KB-8576: Configuration reference: Dashboard attachment limit', 'KB-2914: Support priority and escalation policy']"
+    }
+  ]
+}

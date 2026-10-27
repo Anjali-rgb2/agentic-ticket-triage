@@ -1,0 +1,33 @@
+{
+  "ticket_id": "TKT-128253",
+  "account_id": "ACC-3737",
+  "category": "needs_info",
+  "priority": "P3",
+  "route_to": "L1_support",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": true,
+  "kb_references": [
+    "KB-2914",
+    "KB-5930",
+    "KB-6401"
+  ],
+  "account_signals": [],
+  "customer_reply": "Please provide more information about the issue.",
+  "internal_note": "Further investigation needed to determine module/symptom.",
+  "confidence": 0.0,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "Nothing works since yesterday. Please fix ASAP!! Clearwater Manufacturing",
+        "module": "",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-2914: Support priority and escalation policy', 'KB-5930: Identifying duplicate tickets', 'KB-6401: Handling suspected data exposure between suppliers or tenants', 'KB-1001: Release notes 24.1', 'KB-1189: Release notes 25.1']"
+    }
+  ]
+}

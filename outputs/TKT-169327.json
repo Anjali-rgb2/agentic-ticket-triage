@@ -1,0 +1,44 @@
+{
+  "ticket_id": "TKT-169327",
+  "account_id": "ACC-XXXX",
+  "category": "duplicate",
+  "priority": "P3",
+  "route_to": "L1_support",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-7072"
+  ],
+  "account_signals": [],
+  "customer_reply": "We will investigate this issue and provide an update soon.",
+  "internal_note": "Duplicate of KB-7072: E-5214 supplier portal onboarding form error",
+  "confidence": 0.8,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "E-5214 supplier portal onboarding form error",
+        "module": "supplier portal",
+        "error_code": "E-5214",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-7072: E-5214: Supplier onboarding form returns a validation error', 'KB-1212: E-5104: Supplier onboarding form is rejected', 'KB-9755: FAQ: Can a supplier onboarding form be restored after deletion?', 'KB-7889: Re-establish supplier portal trust after a SAML/SSO change', 'KB-1406: How to: Merge duplicate supplier profiles']"
+    },
+    {
+      "step": 3,
+      "action": "search_related_tickets",
+      "input": {
+        "account_id": "TKT-169327",
+        "module": "supplier portal",
+        "error_code": "E-5214",
+        "subject": "New supplier onboarding form error",
+        "description": "We are onboarding a logistics supplier for our EU entity and the onboarding form returns E-5214 on submit.",
+        "days": 30
+      },
+      "observation": "Found 0 related tickets. Top matches: []"
+    }
+  ]
+}

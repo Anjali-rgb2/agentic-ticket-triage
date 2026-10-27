@@ -1,0 +1,53 @@
+{
+  "ticket_id": "TKT-160477",
+  "account_id": "ACC-1633",
+  "category": "duplicate",
+  "priority": "P3",
+  "route_to": "L1_support",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": "TKT-160477",
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-1786"
+  ],
+  "account_signals": [],
+  "customer_reply": "Please reply to this ticket so we can assist you further.",
+  "internal_note": "Duplicate ticket found with matching error code and module.",
+  "confidence": 0.9,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "E-2207",
+        "module": "CLM",
+        "error_code": "E-2207",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-1786: E-2207: E-signature request is rejected', 'KB-2914: Support priority and escalation policy', 'KB-5930: Identifying duplicate tickets', 'KB-6401: Handling suspected data exposure between suppliers or tenants', 'KB-2605: [DEPRECATED] E-2207: E-signature request is rejected']"
+    },
+    {
+      "step": 3,
+      "action": "search_related_tickets",
+      "input": {
+        "account_id": "ACC-1633",
+        "module": "CLM",
+        "error_code": "E-2207",
+        "days": 30
+      },
+      "observation": "Found 1 related tickets. Top matches: ['TKT-160477']"
+    },
+    {
+      "step": 4,
+      "action": "search_kb",
+      "input": {
+        "query": "Frostline Retail Group",
+        "module": "CLM",
+        "error_code": "E-2207",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-1786: E-2207: E-signature request is rejected', 'KB-2914: Support priority and escalation policy', 'KB-5930: Identifying duplicate tickets', 'KB-6401: Handling suspected data exposure between suppliers or tenants', 'KB-2605: [DEPRECATED] E-2207: E-signature request is rejected']"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "ticket_id": "TKT-158764",
+  "account_id": "ACC-3600",
+  "category": "how_to",
+  "priority": "P4",
+  "route_to": "L1_support",
+  "escalate": false,
+  "notify_tam": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-4449"
+  ],
+  "account_signals": [],
+  "customer_reply": "Hi Brightfield Energy, please refer to KB-4449 for instructions on how to delegate approvals during leave.",
+  "internal_note": "Customer requested information on how to delegate approvals during leave. KB-4449 was referenced.",
+  "confidence": 0.8,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "delegate approvals during leave in eProcurement",
+        "module": "eProcurement",
+        "error_code": "",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-4449: How to: Delegate approvals while out of office', 'KB-6082: Approvals appear in the approver inbox with a delay', 'KB-2495: E-1243: Purchase order stays stuck in processing', 'KB-1093: Configuration reference: Requisition attachment limit', 'KB-1204: How to: Change a PO after approval']"
+    }
+  ]
+}

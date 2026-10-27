@@ -1,0 +1,44 @@
+{
+  "ticket_id": "TKT-160094",
+  "account_id": "ACC-2507",
+  "category": "duplicate",
+  "priority": "P3",
+  "route_to": "L1_support",
+  "escalate": true,
+  "notify_tam": false,
+  "duplicate_of": "TKT-160094",
+  "needs_clarification": false,
+  "kb_references": [
+    "KB-4795"
+  ],
+  "account_signals": [],
+  "customer_reply": "We will investigate this issue further and provide an update soon.",
+  "internal_note": "Duplicate of TKT-160094 found. Investigating.",
+  "confidence": 0.8,
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "action": "search_kb",
+      "input": {
+        "query": "E-3310 suppliers cannot submit bids",
+        "module": "Sourcing",
+        "error_code": "E-3310",
+        "limit": 6
+      },
+      "observation": "Found 6 relevant KB articles. Top results: ['KB-4795: E-3310: Bid submission is rejected', 'KB-8328: How to: Invite suppliers to an event', 'KB-6401: Handling suspected data exposure between suppliers or tenants', 'KB-1461: Configuration reference: Bid submission timeout', 'KB-1520: Configuration reference: Bid submission attachment limit']"
+    },
+    {
+      "step": 3,
+      "action": "search_related_tickets",
+      "input": {
+        "account_id": "ACC-2507",
+        "module": "Sourcing",
+        "error_code": "E-3310",
+        "subject": "Suppliers cannot submit bids",
+        "description": "Several suppliers report E-3310 when they submit bids on our packaging RFx. The event closes in 2 days. Nothing changed on the event itself.",
+        "days": 30
+      },
+      "observation": "Found 1 related tickets. Top matches: ['TKT-160094']"
+    }
+  ]
+}
